@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>Login Forma</h1>
+    <form>
+        <div class="form-group">
+            <label for="korisnickoIme">Korisnicko ime</label>
+
+            <input type="text" class="form-control" id="korisnickoIme" required
+                    [(ngModel)]="model.korisnickoIme" name="korisnickoIme"
+                   #username="ngModel">
+            <div [hidden]="username.valid || username.pristine"
+                 class="alert alert-danger">
+                Korisnicko ime je obavezno
+            </div>
+
+
+        </div>
+
+        <div class="form-group">
+            <label for="sifra">Sifra</label>
+            <input type="text" class="form-control" id="sifra" required>
+        </div>
+
+<!--
+        <div class="form-group">
+            <label for="funkcija">Funkcija</label>
+            <select class="form-control" id="funkcija">
+                <option *ngFor="let f of funkcije" [value]="f">{{f}}</option>
+            </select>
+        </div> -->
+
+        <button type="submit" class="btn btn-default">Uloguj se</button>
+    </form>
+</div>

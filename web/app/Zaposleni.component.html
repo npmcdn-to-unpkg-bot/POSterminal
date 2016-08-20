@@ -1,0 +1,29 @@
+<button (click)="getZaposleni()"> Zaposleni </button>
+<button (click)="getArtikli()"> Artikli </button>
+<div (*ngIf)="prikaziZaposlene">
+    <h2>Lista zaposlenih</h2>
+    <ul class="items">
+        <li> nema nikog? </li>
+        <!-- <li> {{zaposleni}} </li> -->
+        <li *ngFor="let zap of zaposleni | async" (click)="onSelect(zap)" [class.selected]="zap === selectedZap">
+        <span class="zap-element">
+          <span class="badge">{{zap.idZaposleni}}</span> {{zap.ime}} {{zap.prezime}}
+        </span>
+            <button class="delete-button" (click)="deleteZap(zap, $event)">Obrisi</button>
+        </li>
+    </ul>
+</div>
+<!--
+<div class="error" *ngIf="error">{{error}}</div>
+<button (click)="addHero()">Add New Hero</button>
+<div *ngIf="addingHero">
+    <my-hero-detail (close)="close($event)"></my-hero-detail>
+</div>
+
+<div *ngIf="selectedHero">
+    <h2>
+        {{selectedHero.name | uppercase}} is my hero
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+</div>
+-->

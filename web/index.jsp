@@ -1,10 +1,13 @@
 <html>
 
 <head>
+  <base href="/">
   <title>Angular 2 Tour of Heroes</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="forms.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
   <script language="JavaScript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
@@ -14,8 +17,6 @@
   <script src="https://npmcdn.com/zone.js@0.6.12?main=browser"></script>
   <script src="https://npmcdn.com/reflect-metadata@0.1.3"></script>
   <script src="https://npmcdn.com/systemjs@0.19.27/dist/system.src.js"></script>
-
-
 
   <script src="systemjs.config.js"></script>
   <script>
@@ -43,6 +44,8 @@
   </script>
 
 
+
+
 </head>
 
 <body>
@@ -52,6 +55,8 @@
 
 <!-- klikom na meni dugme iskace prozor -->
 
+
+<!--
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">About</a>
@@ -65,10 +70,12 @@
     John Doe
     <!-- <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span> -->
   <!--</div> -->
-</div>
+
+
+<!-- </div>
 
 <!-- -->
-
+<!--
 <div id="main">
 
   <div  style="width:100%; height:15%; border:1px solid blue; ">
@@ -240,9 +247,11 @@
 
 </div>
 
+
 <br/><br/>
-<h1>Heroes: </h1>
-<br/><br/>
+<zaposleni>Loading zaposleni...</zaposleni>
+</br> -->
+
 <my-app>Loading... bla bla blaaaaaaaaa</my-app>
 </body>
 </html>

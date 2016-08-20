@@ -1,0 +1,75 @@
+<div class="container">
+    <h1>Registracija Forma</h1>
+    <form>
+        <div class="form-group">
+            <label for="ime">Ime</label>
+
+            <input type="text" class="form-control" id="ime" required
+                   [(ngModel)]="string" name="ime" placeholder="Ime"
+                   #ime="ngModel">
+            <div [hidden]="ime.valid || ime.pristine"
+                 class="alert alert-danger">
+                Ime je obavezno
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="prezime">Prezime</label>
+
+            <input type="text" class="form-control" id="prezime" required
+                   [(ngModel)]="string" name="prezime" placeholder="Prezime"
+                   #prezime="ngModel">
+            <div [hidden]="prezime.valid || prezime.pristine"
+                 class="alert alert-danger">
+                Prezime je obavezno
+            </div>
+
+        </div>
+
+<!--
+        <div class="form-group">
+            <label for="prezime">Prezime</label>
+
+            <input type="text" class="form-control" id="prezime" required
+                    name="prezime"
+                   #prezime="ngModel">
+            <div [hidden]="prezime.valid || prezime.pristine"
+                 class="alert alert-danger">
+                Prezime je obavezno
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="funkcija">Funkcija</label>
+
+            <input type="text" class="form-control" id="funkcija" required
+                    name="funkcija"
+                   #funkcija="ngModel">
+            <div [hidden]="funkcija.valid || funkcija.pristine"
+                 class="alert alert-danger">
+                Funkcija je obavezno
+            </div>
+        </div> -->
+<!--
+            <label for="prezime">Prezime</label>
+
+            <input type="text" class="form-control" id="prezime" required
+                   placeholder="Prezime" name="prezime"
+                   #prezime="ngModel">
+            <div [hidden]="prezime.valid || prezime.pristine"
+                 class="alert alert-danger">
+                Prezime je obavezno
+            </div>
+
+
+
+
+        <div class="form-group">
+            <label for="sifra">Sifra</label>
+            <input type="text" class="form-control" id="sifra" required>
+        </div>
+-->
+
+        <button type="submit" class="btn btn-default">Registruj se</button>
+    </form>
+</div>

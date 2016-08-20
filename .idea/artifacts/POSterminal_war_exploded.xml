@@ -10,6 +10,10 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.sun.jersey:jersey-bundle:1.19.1" />
           <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.1.1" />
+          <element id="library" level="project" name="Maven: org.webjars.npm:angular:1.5.8" />
+          <element id="library" level="project" name="Maven: org.webjars:angularjs:2.0.0-alpha.22" />
+          <element id="library" level="project" name="Maven: org.webjars:bootstrap:3.3.6" />
+          <element id="library" level="project" name="Maven: org.webjars:jquery:1.11.1" />
         </element>
       </element>
     </root>
