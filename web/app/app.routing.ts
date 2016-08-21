@@ -12,7 +12,7 @@ const appRoutes: Routes = [
     { path: 'login', component: LoginFormComponent },
 
     { path: 'registration', component: RegistrationFormComponent },
-    { path: 'zaposleni', component: ZaposleniComponent }
+    { path: 'zaposleni', component: ZaposleniComponent },
     /*,
     {
         path: 'heroes',
@@ -22,7 +22,7 @@ const appRoutes: Routes = [
         }
     },
     { path: 'hero/:id', component: HeroDetailComponent },
-*/,
+*/
     { path: '**', component: LoginFormComponent }
 ];
 
