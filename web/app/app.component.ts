@@ -5,17 +5,33 @@ import { Component }          from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `   
-                <h1>Component Router</h1>
-                  <nav>
-                    <a routerLink="/login" routerLinkActive="active">Login</a>
-                    <a routerLink="/zaposleni" routerLinkActive="active">Zaposleni</a> 
-                    <a routerLink="/artikli" routerLinkActive="active">Artikli</a>               
-                    <a routerLink="/registration" routerLinkActive="active">Registracija</a>
-                    
-                    <br/>
-                    <!-- <a routerLink="/pocetna" routerLinkActive="active">Pocetna</a> -->
-                  </nav>
-                  <router-outlet></router-outlet>`
+             <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!--
+            <a href="#"><a routerLink="/zaposleni" routerLinkActive="active">Zaposleni</a></a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            -->
+            <nav>
+              <a routerLink="/login" routerLinkActive="active">Login</a>
+              <a routerLink="/zaposleni" routerLinkActive="active">Zaposleni</a>
+              <a routerLink="/artikli" routerLinkActive="active">Artikli</a>
+              <a routerLink="/registration" routerLinkActive="active">Registracija</a>
+          
+              <br/>
+              <!-- <a routerLink="/pocetna" routerLinkActive="active">Pocetna</a> -->
+            </nav>
+          
+            <!--
+            <div class="chip">
+              <img src="../img/img_avatar.png" alt="Person" width="96" height="96">
+              John Doe
+              <!-- <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span> -->
+            <!--</div> -->
+          
+           </div>         
+                 <router-outlet></router-outlet>`
   /*
   template: `
     <h1 class="title">Component Router</h1>

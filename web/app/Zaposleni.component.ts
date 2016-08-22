@@ -20,9 +20,11 @@ import { Promise } from 'es6-promise';
             <div *ngIf="prikaziZaposlene">
                 <h2>Lista zaposlenih</h2>
                 <!-- <span> {{zaposleni}} </span> -->
-                <ul>
-                <li *ngFor="let zp of zaposleni">
-                  {{ zp.idZaposleni }}: {{ zp.ime }} {{ zp.prezime }}
+                <ul class = "items">
+                <li *ngFor="let zp of zaposleni" (click)="onSelect(zp)" [class.selected]="zp === selectedZap">
+                  <span>
+                    <span class="badge">{{zp.idZaposleni}}</span> {{zp.ime}} {{zp.prezime}}
+                 </span>
                 </li>
               </ul>
 

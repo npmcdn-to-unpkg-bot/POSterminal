@@ -82,7 +82,6 @@ public class Services extends HttpServlet {
 
     public static String getZaposleni() {
         try{
-
             makeConnection();
             //STEP 4: Execute a query
             System.out.println("Creating statement...");

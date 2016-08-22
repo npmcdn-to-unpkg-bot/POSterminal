@@ -43,9 +43,6 @@
     }
   </script>
 
-
-
-
 </head>
 
 <body>
@@ -56,31 +53,13 @@
 <!-- klikom na meni dugme iskace prozor -->
 
 
-<!--
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-
-  <!--
-  <div class="chip">
-    <img src="../img/img_avatar.png" alt="Person" width="96" height="96">
-    John Doe
-    <!-- <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span> -->
-  <!--</div> -->
-
-
-<!-- </div>
-
 <!-- -->
-<!--
+
 <div id="main">
 
   <div  style="width:100%; height:15%; border:1px solid blue; ">
 
-    <span style="border: 1px solid black; float: left;" class="containerForMenu" onclick="changeMenuIcon(this), openNav()">
+    <span style="border: 1px solid black; width:50px; float: left;" class="containerForMenu" onclick="changeMenuIcon(this), openNav()">
       <div class="bar1Menu"></div>
       <div class="bar2Menu"></div>
       <div class="bar3Menu"></div>
@@ -247,12 +226,13 @@
 
 </div>
 
-
 <br/><br/>
+<!--
 <zaposleni>Loading zaposleni...</zaposleni>
-</br> -->
-
+-->
+</br>
 <my-app>Loading... bla bla blaaaaaaaaa</my-app>
+<routlet>routlet...</routlet>
 <!-- <zaposleni>Zaposleni TAG</zaposleni> -->
 </body>
 </html>
