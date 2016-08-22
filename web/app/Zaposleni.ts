@@ -14,6 +14,13 @@ export class Zaposleni {
     datumPrekidaRadnogOdnosa: string;
     pol: string;*/
 
+    constructor(id: number = 0, ime: string = "", prezime: string = "") {
+        this.idZaposleni = id;
+        this.ime = ime;
+        this.prezime = prezime;
+    }
+
+
     public toString() {
         return "ID: " + this.idZaposleni + ", ime: " + this.ime + " " + this.prezime;
     }

@@ -253,5 +253,6 @@
 </br> -->
 
 <my-app>Loading... bla bla blaaaaaaaaa</my-app>
+<!-- <zaposleni>Zaposleni TAG</zaposleni> -->
 </body>
 </html>

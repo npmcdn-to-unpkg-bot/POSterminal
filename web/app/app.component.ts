@@ -1,4 +1,6 @@
 import { Component }          from '@angular/core';
+//import { ZaposleniComponent } from './Zaposleni.component';
+//import { ZaposleniService } from './Zaposleni.service';
 
 @Component({
   selector: 'my-app',
@@ -7,9 +9,10 @@ import { Component }          from '@angular/core';
                   <nav>
                     <a routerLink="/login" routerLinkActive="active">Login</a>
                     <a routerLink="/zaposleni" routerLinkActive="active">Zaposleni</a> 
-                    <a routerLink="/artikli" routerLinkActive="active">Artikli</a> 
-                    <br/>
+                    <a routerLink="/artikli" routerLinkActive="active">Artikli</a>               
                     <a routerLink="/registration" routerLinkActive="active">Registracija</a>
+                    
+                    <br/>
                     <!-- <a routerLink="/pocetna" routerLinkActive="active">Pocetna</a> -->
                   </nav>
                   <router-outlet></router-outlet>`

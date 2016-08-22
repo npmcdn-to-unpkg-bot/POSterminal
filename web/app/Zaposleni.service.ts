@@ -30,6 +30,7 @@ export class ZaposleniService {
         //console.log("getZaposleni u service: "+this.http.get(this.zaposleniUrl));
         //return this.http.get(this.zaposleniUrl).map(this.extractData).catch(this.handleError);
 
+        console.log("getZaposleni() service");
         var p = new Promise<Zaposleni[]>((resolve, reject) => {
             $.ajax({
                 dataType: "json",
@@ -54,14 +55,16 @@ export class ZaposleniService {
                          //zPom.setID();
                          }*/
                         zaposleniPom.push(zPom);
+
                     }
-                    return resolve(zaposleniPom);
+                    console.log("Ceo niz: " + zaposleniPom + "\n\n");
+                    resolve(zaposleniPom);
                     //return JSON.stringify(response);
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
                     console.log("Status: " + textStatus);
                     console.log("Error: " + errorThrown);
-                    return reject(errorThrown);
+                    reject(errorThrown);
                 }
             })
         });

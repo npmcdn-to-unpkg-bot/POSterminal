@@ -1,7 +1,13 @@
 <button (click)="getZaposleni()"> Zaposleni </button>
+<button (click)="ispisiZaposlene()"> Ispisi zaposlene u konzoli </button>
+<br/>
+<!--
 <button (click)="getArtikli()"> Artikli </button>
+-->
+<div>  <p>Prikazi zaposlene je (true/false): {{prikaziZaposlene}}</p> </div>
 <div (*ngIf)="prikaziZaposlene">
     <h2>Lista zaposlenih</h2>
+
     <ul class="items">
         <li> nema nikog? </li>
         <!-- <li> {{zaposleni}} </li> -->
