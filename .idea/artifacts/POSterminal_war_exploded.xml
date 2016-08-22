@@ -14,6 +14,8 @@
           <element id="library" level="project" name="Maven: org.webjars:angularjs:2.0.0-alpha.22" />
           <element id="library" level="project" name="Maven: org.webjars:bootstrap:3.3.6" />
           <element id="library" level="project" name="Maven: org.webjars:jquery:1.11.1" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.7" />
+          <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.6" />
         </element>
       </element>
     </root>

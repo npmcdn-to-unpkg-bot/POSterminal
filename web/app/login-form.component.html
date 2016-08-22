@@ -5,29 +5,32 @@
             <label for="korisnickoIme">Korisnicko ime</label>
 
             <input type="text" class="form-control" id="korisnickoIme" required
-                    [(ngModel)]="model.korisnickoIme" name="korisnickoIme"
+                   [(ngModel)]="ngKorisnickoIme" name="korisnickoIme" placeholder="username"
                    #username="ngModel">
+
             <div [hidden]="username.valid || username.pristine"
                  class="alert alert-danger">
                 Korisnicko ime je obavezno
             </div>
-
-
         </div>
 
         <div class="form-group">
             <label for="sifra">Sifra</label>
-            <input type="text" class="form-control" id="sifra" required>
-        </div>
 
-<!--
-        <div class="form-group">
-            <label for="funkcija">Funkcija</label>
-            <select class="form-control" id="funkcija">
-                <option *ngFor="let f of funkcije" [value]="f">{{f}}</option>
-            </select>
-        </div> -->
+            <input type="password" class="form-control" id="sifra" required
+                   [(ngModel)]="ngSifra" name="sifra" placeholder="password"
+                   #password="ngModel">
+
+            <div [hidden]="password.valid || password.pristine"
+                 class="alert alert-danger">
+                Sifra ime je obavezna
+            </div>
+        </div>
 
         <button type="submit" class="btn btn-default">Uloguj se</button>
     </form>
+    <br/>
+    user: {{ngKorisnickoIme}}<br/>
+    pass: {{ngSifra}}
+
 </div>
